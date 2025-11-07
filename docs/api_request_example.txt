@@ -1,0 +1,28 @@
+Exemplo de requisição POST do data harvester para um endpoint destino.
+
+URL:
+  POST https://webhook.site/your-unique-url
+
+Headers:
+  Content-Type: application/json
+  User-Agent: python-rpa-data-harvester/1.0 (+https://github.com/youruser)
+
+Body (JSON):
+[
+  {
+    "title": "A Light in the Attic",
+    "price": "£51.77",
+    "availability": "In stock",
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/xx.jpg",
+    "product_page_url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+  },
+  ...
+]
+
+Resposta esperada:
+  HTTP 200 OK
+  {
+    "status": "ok",
+    "received": 20
+  }

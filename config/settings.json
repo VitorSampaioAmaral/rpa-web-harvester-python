@@ -1,0 +1,5 @@
+{
+  "target_url": "https://quotes.toscrape.com/",
+  "output_path": "data/output.json",
+  "log_path": "logs/harvester.log"
+}

@@ -1,0 +1,17 @@
+flowchart TD
+  A[Start: run main.py] --> B{Load config/settings.yaml}
+  B --> C[Fetch page list from base_url]
+  C --> D[For each page -> HTTP GET]
+  D --> E{Parse HTML with parser}
+  E --> F[Extract item fields]
+  F --> G[Append to raw JSON batch -> data/raw/]
+  G --> H[After pages done -> run cleaner]
+  H --> I[Normalize fields, remove duplicates]
+  I --> J[Export to CSV / XLSX / JSON -> data/processed/]
+  J --> K{integration.send_after_collect?}
+  K -->|Yes| L[POST JSON to webhook/API]
+  K -->|No| M[Skip sending]
+  L --> N[Log response status]
+  M --> N
+  N --> O[Save execution log -> logs/]
+  O --> P[End]

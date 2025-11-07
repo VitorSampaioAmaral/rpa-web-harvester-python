@@ -1,0 +1,38 @@
+# Configurações gerais do RPA Data Harvester
+# Ajuste conforme necessário antes de rodar.
+
+base_url: "https://books.toscrape.com/"
+start_path: ""                 # caminho inicial relativo à base_url se necessário
+pages_to_crawl: 5              # número de páginas a percorrer (padrão: 5)
+items_per_page: 20             # expectativa de itens por página (apenas referência)
+
+headers:
+  User-Agent: "rpa-data-harvester/1.0 (+https://github.com/VitorSampaioAmaral)"
+  Accept-Language: "en-US,en;q=0.9"
+
+network:
+  timeout_seconds: 10
+  max_retries: 3
+  delay_seconds_between_requests: 1.0  # evitar sobrecarregar o site
+
+output:
+  raw_path: "data/raw/"
+  processed_path: "data/processed/"
+  csv_filename: "books.csv"
+  xlsx_filename: "books.xlsx"
+  json_filename: "books.json"
+  save_json_sample: true
+
+logging:
+  enabled: true
+  logs_path: "logs/"
+  log_level: "INFO"  # DEBUG / INFO / WARNING / ERROR
+
+integration:
+  webhook_url: ""   # opcional: insira seu webhook para testar envios
+  send_after_collect: false
+
+scheduler:
+  enabled: false
+  # se using cron-like schedule, document here (ou use scheduler.py)
+  run_every_hours: 24

@@ -1,0 +1,13 @@
+# Exemplo de log - cada execução salva em logs/log_YYYY-MM-DD_HH-MM-SS.txt
+
+[2025-11-06 21:32:05] INFO  - START - python_rpa_data_harvester v1.0
+[2025-11-06 21:32:05] INFO  - Loaded config from config/settings.yaml
+[2025-11-06 21:32:06] INFO  - Crawling page 1/5: https://books.toscrape.com/catalogue/page-1.html
+[2025-11-06 21:32:08] INFO  - Extracted 20 items from page 1
+...
+[2025-11-06 21:33:45] INFO  - Total items extracted: 100
+[2025-11-06 21:33:45] INFO  - Saved raw JSON to data/raw/books_2025-11-06T21-33-45.json
+[2025-11-06 21:33:46] INFO  - Processed data saved to data/processed/books.csv
+[2025-11-06 21:33:46] INFO  - Exported XLSX to data/processed/books.xlsx
+[2025-11-06 21:33:47] INFO  - Integration disabled (send_after_collect=false)
+[2025-11-06 21:33:47] INFO  - END - Duration: 00:01:42
