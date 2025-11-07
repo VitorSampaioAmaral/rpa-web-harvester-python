@@ -45,7 +45,7 @@ Esses aspectos tornam o projeto uma base sólida para qualquer operação que de
 
 **Vitor Sampaio Amaral**  
 GitHub: [github.com/VitorSampaioAmaral](https://github.com/VitorSampaioAmaral)  
-LinkedIn: [linkedin.com/in/vitorsampaio16l](https://www.linkedin.com/in/vitorsampaio16/)
+LinkedIn: [linkedin.com/in/vitorsampaio16](https://www.linkedin.com/in/vitorsampaio16/)
 
 ## ⚖️ Licença
 
